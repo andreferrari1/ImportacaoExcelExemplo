@@ -13,5 +13,5 @@ http://www.macoratti.net/19/04/c_dioc1.htm
 Validação de campos
 http://www.codigoexpresso.com.br/Home/Postagem/62
 
-Boas Praticas desemponho em desempenho
+Boas Praticas de desempenho em banco
 https://levelup.gitconnected.com/3-ways-to-improve-the-ef-core-performance-in-your-net-core-app-d9b6295188cc
