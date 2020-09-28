@@ -8,15 +8,3 @@
 - Repositórios genéricos e específicos com Entity Framework Core.
 - Testes integrados com utilização de transações
 
-# <a href="https://medium.com/@adlerpagliarini/bf5373206ac" target="_blank">Parte 3</a>
-- Repositórios genéricos e específicos com Dapper.
-- Testes integrados com utilização de transações
-
-# <a href="https://medium.com/@adlerpagliarini/8a4157e88d61" target="_blank">Parte 4</a>
-- Camada de serviços e injeção de dependência.
-
-# <a href="https://medium.com/@adlerpagliarini/44093e0083c7" target="_blank">Parte 5</a>
-- Asp.Net Core Web Application
-
-#
-<img src="https://github.com/adlerpagliarini/RepositoryPattern-Dapper-EFCore/blob/master/screen.JPG" />
