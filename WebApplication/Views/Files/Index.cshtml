@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Domain.Entities.ReportFileImports>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <h2>Processamento</h2>
+
+<p>
+    <a asp-action="Create">Importa arquivo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FileId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FileDateRegister)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DeliveryDateMin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AmountValue)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FileId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FileDateRegister)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeliveryDateMin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AmountValue)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

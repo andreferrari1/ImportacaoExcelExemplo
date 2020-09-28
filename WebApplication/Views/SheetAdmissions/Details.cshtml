@@ -1,0 +1,54 @@
+﻿@model Domain.Entities.SheetAdmission
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SheetAdmission</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dd>
+            @Html.DisplayFor(model => model.File.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliveryDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DeliveryDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UnitaryValue)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UnitaryValue)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.File)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.File)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.SumAmount)
+        </dt>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

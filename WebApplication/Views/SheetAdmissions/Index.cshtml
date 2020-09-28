@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Domain.Entities.SheetAdmission>
+
+@{
+    ViewData["Title"] = "Relatório";
+}
+
+    <h2>Relatório</h2>
+
+<p>
+    <a asp-action="Return">Voltar</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.File)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DeliveryDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnitaryValue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SumAmount)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.File.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeliveryDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitaryValue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SumAmount)
+            </td>
+
+        </tr>
+}
+    </tbody>
+</table>
